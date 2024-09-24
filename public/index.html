@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth focus:scroll-auto   ">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>portofolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-[#cdd1d3c1] ">
+    <div>
+     <!-- <script>alert("anda mengakses portofolio milik bos")</script> -->
+       <!-- nav strt -->
+      
+         <section class="bg-transparent  fixed h-20 w-full pt-5 flex justify-center ">
+          <nav class=" fixed  inset-0 z-10 block h-max w-full max-w-full rounded-none border border-white/80  py-2 px-4 text-white shadow-lg shadow-blue-300 backdrop-blur-2xl backdrop-saturate-200 lg:px-8 lg:py-4 " style="background-color: rgba(224, 218, 218, 0.4)">
+            <div class="flex items-center text-gray-900">
+              <a
+                href="#"
+                class="mr-4 block cursor-pointer py-1.5  leading-relaxed  antialiased "
+              > 
+             <img src="img/klipartz.com.png" class="h-10 w-full ml-8" alt="">
+              </a>
+              <ul class="ml-auto  sm: flex  justify-center sm:mr-40 gap-6 lg:flex md:justify-end ">
+                <li class="block p-1   text-sm font-normal leading-normal text-inherit antialiased">
+                  <a class="flex items-center font-semibold text-[#164863] hover:text-blue-500 hover:underline " href="#">
+                    Home
+                  </a>
+                </li>
+                <li class="block p-1   text-sm font-normal leading-normal text-inherit antialiased">
+                  <a class="flex items-center font-semibold text-[#164863]  hover:text-blue-500 hover:underline " href="#tentang">
+                    Profile
+                  </a>
+                </li>
+                <li class="block p-1  text-sm leading-normal text-inherit antialiased">
+                  <a class="flex items-center font-semibold text-[#164863]  hover:text-blue-500 hover:underline " href="#sekil">
+                    Skill
+                  </a>
+                </li>
+                <li class="block p-1 text-sm leading-normal text-inherit antialiased">
+                  <a class="flex items-center font-semibold text-[#164863]  hover:text-blue-500 hover:underline" href="#blog">
+                    Blog
+                  </a>
+                </li>
+              </ul>
+              
+              
+          </nav>
+    </section>
+  
+      
+      <!-- nav end -->
+      <div class="flex justify-center pt-64  ">
+        <!-- home -->
+        <header>
+        
+          <span class=" text-[#164863] text-1xl font-bold  flex justify-center mb-3 " style="font-family: 'Poppins', sans-serif;">Muhammad Fiqri Agustriawan</span>
+            <span class="  bg-transparent flex justify-center text-[#164863] text-6xl font-semibold stroke-current " style="font-family: 'Poppins', sans-serif;" >  Digital Design  & <span class="typewrite" data-period="2000" data-type= '[" &nbsp; UI/UX "," &nbsp; Back End Developer "," &nbsp;  Front End Developer " ]'> </span></span>
+            <script>
+              var TxtType = function(el, toRotate, period) {
+              this.toRotate = toRotate;
+              this.el = el;
+              this.loopNum = 0;
+              this.period = parseInt(period, 10) || 2000;
+              this.txt = '';
+              this.tick();
+              this.isDeleting = false;
+              };
+              
+              TxtType.prototype.tick = function() {
+              var i = this.loopNum % this.toRotate.length;
+              var fullTxt = this.toRotate[i];
+              
+              if (this.isDeleting) {
+              this.txt = fullTxt.substring(0, this.txt.length - 1);
+              } else {
+              this.txt = fullTxt.substring(0, this.txt.length + 1);
+              }
+              
+              this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+              
+              var that = this;
+              var delta = 200 - Math.random() * 100;
+              
+              if (this.isDeleting) { delta /= 2; }
+              
+              if (!this.isDeleting && this.txt === fullTxt) {
+              delta = this.period;
+              this.isDeleting = true;
+              } else if (this.isDeleting && this.txt === '') {
+              this.isDeleting = false;
+              this.loopNum++;
+              delta = 500;
+              }
+              
+              setTimeout(function() {
+              that.tick();
+              }, delta);
+              };
+              
+              window.onload = function() {
+              var elements = document.getElementsByClassName('typewrite');
+              for (var i=0; i<elements.length; i++) {
+              var toRotate = elements[i].getAttribute('data-type');
+              var period = elements[i].getAttribute('data-period');
+              if (toRotate) {
+              new TxtType(elements[i], JSON.parse(toRotate), period);
+              }
+              }
+              // INJECT CSS
+              var css = document.createElement("style");
+              css.type = "text/css";
+              css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+              document.body.appendChild(css);
+              };
+          </script>
+
+            <div class="text-center text-[#164863] text-1xl font-medium mt-5 bg-transparent "><span class="">3 year students learn digital design and front end and back end as well as how to develop websites using various frameworks <br>and are now in the stage of studying the development of programming technology </span> 
+            </div>
+          
+          </div>
+          <div class=" flex justify-center gap-32 mt-40">
+            <img class="rounded-2xl bg-[#9BBEC8] w-14 h-14 hover:cursor-pointer hover:bg-blue-300 hover:-translate-y-1   hover:shadow-lg hover:shadow-blue-300  transition-transform duration-500" src="img/logo_figma-removebg-preview.png" alt="figma">
+            
+            <img class="rounded-2xl bg-[#9BBEC8] w-14 h-14 hover:cursor-pointer  hover:bg-blue-300 mt-10 hover:-translate-y-1   hover:shadow-lg hover:shadow-blue-300  transition-transform duration-500" src="img/vscode_logo-removebg-preview.png" alt="vscode">
+            
+            <img class="rounded-2xl bg-[#9BBEC8]  w-14 h-14 hover:cursor-pointer  hover:bg-blue-300 mt-10 hover:-translate-y-1   hover:shadow-lg hover:shadow-blue-300  transition-transform duration-500" src="img/logo_ai-removebg-preview.png" alt="ai">
+            
+            <img id="tentang" class="rounded-2xl bg-[#9BBEC8] w-14 h-14 hover:cursor-pointer  hover:bg-blue-300 hover:-translate-y-1   hover:shadow-lg hover:shadow-blue-300  transition-transform duration-500 " src="img/logo_cloud-removebg-preview.png " alt="cloud">
+          </div>
+        </header>
+        <!-- profile -->
+      <div  class=" flex justify-center ml-40  mt-80" >
+   <section > 
+          <div class=" bg-[#9BBEC8]  rounded-t-[40px] rounded-bl-[40px]   hover:cursor-pointer hover:-translate-y-1   w-60 pt-8 hover:shadow-lg hover:shadow-blue-300  transition-transform duration-500 ">
+            <img class="w-full h-80  mb-64 object-cover "  src="img/formal-removebg-preview.png" />
+          </div>
+
+            <div id="skil" class="flex justify-center ml-52">
+              <h1 class="text-[#164863] font-semibold text-4xl -mt-[550px] mr-[190px] " style="font-family: 'Poppins', sans-serif;">Muhammad Fiqri Agustriawan</h1>
+              <span class="text-[#164863]  text-xl font-medium -mt-[460px] w-[800px] -ml-[700px] " style="font-family: 'Poppins', sans-serif;" >Hi guys, Im Fiqri Im a student at the moment so for those of you who need web dev you can contact me</span>
+
+
+          </div>
+          <div class="-mt-[370px] -ml-64">
+            <div class= "  ml-[600px]">
+              <a href="https://www.instagram.com/fkriq4/">
+                
+                <img class="rounded-full  bg-[#9BBEC8]  h-16 hover:cursor-pointer hover:bg-blue-400 " src="img/download__1_-removebg-preview.png " alt="ig"
+                > 
+              </a>
+            </div>
+            <div class=" -mt-16 ml-[700px]">
+              <a href="https://web.facebook.com/">
+                
+                <img class="rounded-full  bg-[#9BBEC8]  h-16 hover:cursor-pointer hover:bg-blue-400" src="img/605511_facebook_soscialmedia_connection_fb_logo_icon.png" alt="fcb"
+                > 
+              </a>
+            </div>
+          </div>
+          <!-- skill -->
+          
+          <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto mt-28 -ml-[89px] gap-44">
+            <!-- Grid -->
+            <div class="grid sm:grid-cols-1 lg:grid-cols-3 gap-16">
+              <!-- Card -->
+             
+          
+              <!-- Card -->
+              <div class="group flex flex-col h-full bg-[#164863] border-[#164863] shadow-lg rounded-xl   shadow-blue-400">
+                <div class="h-52 flex flex-col justify-center items-center bg-blue-500 rounded-t-xl">
+                  <img class="rounded-3xl w-36 h-36" src="img/dgitaldesignv2.jpg" alt="">
+                </div>
+                <div class="p-4 md:p-6">
+                  <span class="block mb-1 text-xs font-semibold uppercase text-blue-300" style="font-family: 'Poppins', sans-serif;">
+                    UI/UX
+                  </span>
+                  <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-300 dark:hover:text-white" style="font-family: 'Poppins', sans-serif;">
+                    Digital Design
+                  </h3>
+                  <p class="mt-3 text-white" style="font-family: 'Poppins', sans-serif;">
+                    Dapat mendesain di beberapa app software
+                            seperti canva,photoshop,ilustrator dan juga 
+                            powerpoint
+                  </p>
+                </div>
+                <div class="mt-auto flex border-t border-[#DDF2FD] divide-x ">
+                  <a class="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none bg-[#164863]  border-[#9BBEC8] dark:text-white dark:hover:bg-blue-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#">
+                    Lihat selengkapnya
+                  </a>
+                  <a class="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-ee-xl bg-[#164863]  text-gray-800 shadow-sm hover:bg-blue-400 disabled:opacity-50 disabled:pointer-events-none  border- dark:text-white  dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#">
+                    Ulasan
+                  </a>
+                </div>
+              </div>
+              <div class="group flex flex-col h-full bg-[#164863] border-[#164863] shadow-lg  rounded-xl   shadow-blue-400">
+                <div class="h-52 flex flex-col justify-center items-center bg-blue-800 rounded-t-xl">
+                  <img class="rounded-3xl w-36 h-36" src="img/programmer.jpg" alt="">
+                </div>
+                <div class="p-4 md:p-6">
+                  <span class="block mb-1 text-xs font-semibold uppercase text-blue-300" style="font-family: 'Poppins', sans-serif;">
+                    programmer
+                  </span>
+                  <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-300 dark:hover:text-white" style="font-family: 'Poppins', sans-serif;">
+                    Rekayasa perangkat lunak
+                  </h3>
+                  <p class="mt-3 text-white" style="font-family: 'Poppins', sans-serif;">
+                    pengembangan perangkat lunak termasuk pembuatan, pemeliharaan, manajemen perangkat
+                  </p>
+                </div>
+                <div class="mt-auto flex border-t border-[#DDF2FD] divide-x ">
+                  <a class="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none bg-[#164863]  border-[#9BBEC8] dark:text-white dark:hover:bg-blue-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#">
+                    Lihat selengkapnya
+                  </a>
+                  <a class="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-ee-xl bg-[#164863]  text-gray-800 shadow-sm hover:bg-blue-400 disabled:opacity-50 disabled:pointer-events-none  border- dark:text-white  dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#">
+                    Ulasan
+                  </a>
+                </div>
+              </div>
+              <div class="group flex flex-col h-full bg-[#164863] border-[#164863] shadow-lg rounded-xl   shadow-blue-400">
+                <div class="h-52 flex flex-col justify-center items-center bg-blue-300 rounded-t-xl">
+                  <img class="rounded-3xl w-36 h-36" src="img/speech-icon-design-vector.jpg" alt="">
+                </div>
+                <div class="p-4 md:p-6">
+                  <span class="block mb-1 text-xs font-semibold uppercase text-blue-300">
+                    Moderator
+                  </span>
+                  <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-300 dark:hover:text-white" style="font-family: 'Poppins', sans-serif;">
+                    Public Speak
+                  </h3>
+                  <p class="mt-3 text-white" style="font-family: 'Poppins', sans-serif;">
+                    Moderator dalam sebuah presentasi sebagai operator dalam sebuah projek
+                  </p>
+                </div>
+                <div class="mt-auto flex border-t border-[#DDF2FD] divide-x ">
+                  <a class="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none bg-[#164863]  border-[#9BBEC8] dark:text-white dark:hover:bg-blue-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#">
+                    Lihat selengkapnya
+                  </a>
+                  <a class="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-ee-xl bg-[#164863]  text-gray-800 shadow-sm hover:bg-blue-400 disabled:opacity-50 disabled:pointer-events-none  border- dark:text-white  dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#">
+                    Ulasan
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </section>
+        <!-- End Card Blog -->
+      </div>
+        <!-- Card Blog -->
+        <div class=" px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto flex justify-center my-56 shadow-lg shadow-blue-300 h-full sm:w-full" style="background-color: rgba(233, 231, 231, 0.4)">
+          <!-- Grid -->
+          <div class="grid lg:grid-cols-2 gap-10">
+    <!-- Card -->
+    <div class="group sm:flex rounded-xl  shadow-lg dark:focus:ring-gray-600 " style="background-color: rgba(225, 225, 225, 0.4)" href="#">
+      <div class="flex-shrink-0  rounded-xl overflow-hidden w-full h-[200px] sm:w-[250px] sm:h-[350px] ">
+        <img class="w-full h-full  top-0 start-0 object-cover hover:scale-105 transition-transform duration-500 ease-in-out" src="img/1699349614-senin-dengan-segudang-prestasi.jpg" >
+      </div>
+      
+      <div class="grow">
+        <div class="p-4 flex flex-col h-full sm:p-6">
+          <div class="mb-3">
+            <p class="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-md text-xs font-medium bg-gray-100 text-[#164863]  dark:bg-gray-800 dark:text-gray-200">
+              School
+            </p>
+          </div>
+          <a href="https://smktelkom-mks.sch.id/" class=""><h3 class="text-lg sm:text-2xl font-semibold text-[#164863]   hover:text-blue-400 " style="font-family: 'Poppins', sans-serif;">
+            Sekolah Menengah Kejuruan Telkom Makassar Sulawesi selatan
+          </h3></a>
+          <a href="#"><p class="mt-2 text-[#164863] hover:text-blue-400" style="font-family: 'Poppins', sans-serif;">
+            kelas X RPL 3
+          </p></a>
+          
+          <div class="mt-5 sm:mt-auto">
+            <!-- Avatar -->
+            <div class="flex items-center">
+              <div class="flex-shrink-0">
+                <img class="h-[2.875rem] w-full rounded-full" src="img/formal-removebg-preview.png">
+              </div>
+              <div class="ms-2.5 sm:ms-4">
+                <a href="#"><h4 class="font-semibold text-[#164863] hover:text-blue-400 " style="font-family: 'Poppins', sans-serif;">
+                  Muhammad Fiqri
+                </h4></a>
+                <p class="text-xs text-[#164863] ">
+                  Nov 11, 2023
+                </p>
+              </div>
+            </div>
+            <!-- End Avatar -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sm:flex rounded-xl  shadow-lg dark:focus:ring-gray-600 " style="background-color: rgba(225, 225, 225, 0.4)" href="#">
+      <div class="flex-shrink-0  rounded-xl overflow-hidden w-full h-[200px] sm:w-[250px] sm:h-[350px] ">
+        <img class="w-full h-full  top-0 start-0 object-cover hover:scale-105 transition-transform duration-500 ease-in-out" src="img/wduks.jpg">
+      </div>
+      
+      <div class="grow">
+        <div class="p-4 flex flex-col h-full sm:p-6">
+          <div class="mb-3">
+            <p class="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-md text-xs font-medium bg-gray-100 text-[#164863]  dark:bg-gray-800 dark:text-gray-200" style="font-family: 'Poppins', sans-serif;">
+              community
+            </p>
+          </div>
+          <a href="#"><h3 class="text-lg sm:text-2xl font-semibold text-[#164863]  hover:text-blue-400  " style="font-family: 'Poppins', sans-serif;">
+           cafe rumah waduk tempat healing sambil anu dan nyaman kerja produktivitas
+          </h3></a>
+          <a href="#"><p class="mt-2 text-[#164863] hover:text-blue-400" style="font-family: 'Poppins', sans-serif;">
+            punya mas daniel gais
+          </p></a>
+          
+          <div class="mt-5 sm:mt-auto">
+            <!-- Avatar -->
+            <div class="flex items-center">
+              <div class="flex-shrink-0">
+                <img class="h-[55px] w-[45px] rounded-full" src="img/danielc.jpg" >
+              </div>
+              <a id="sekil" href="#"><div class="ms-2.5 sm:ms-4">
+                <h4 class="font-semibold text-[#164863] hover:text-blue-400 ">
+                   Daniel Caturanga
+                </h4></a>
+                <p class="text-xs text-[#164863] ">
+                  Nov 15, 2023
+                </p>
+              </div>
+            </div>
+            <!-- End Avatar -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Card Blog -->
+       <section  class=" px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto flex justify-center my-56 shadow-xl shadow-blue-300  sm:w-full sm:h-[700px] bg-[#164863] -mt-[205px] md:h-[410px] "  >
+        <!-- logo -->
+<div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+  <div class="sm:w-1/2 xl:w-1/3 mx-auto text-center  md:-mt-20">
+    <h2 class="text-xl font-semibold md:text-4xl md:leading-tight text-blue-100 hover:cursor-pointer hover:text-blue-300 hover:drop-shadow-lg " style="font-family: 'Poppins', sans-serif;">source of ability</h2>
+  </div>
+  <!-- Grid -->
+  <div class="grid  sm:grid-cols-2 md:grid-cols-6 gap-20 lg:gap-30 sm:gap-24 md:mt-16">
+    <a href="https://www.javascript.com/"><div class="p-4 md:p-7  rounded-lg dark:bg-slate-800 w-40 h-48 hover:cursor-pointer hover:-translate-y-2 hover:shadow-[0_1px_20px_-0px_rgba(0,0,0,0.3)] hover:shadow-blue-300  transition-transform duration-500" >
+      <img class="py-3 lg:py-5 w-16 h-auto md:w-20 lg:w-24 mx-auto " src="img/js.png" alt="">
+    </div></a>
+    <a href="https://www.w3schools.com/html/"><div class="p-4 md:p-7  rounded-lg dark:bg-slate-800 w-40 h-48 hover:cursor-pointer transition-transform duration-500 hover:-translate-y-2 hover:shadow-[0_1px_20px_-0px_rgba(0,0,0,0.3)] hover:shadow-blue-300">
+      <img class="py-3 lg:py-5 w-16 h-auto md:w-20 lg:w-24 mx-auto text-gray-800 " src="img/HTML5_.png" alt="">
+    </div></a>
+    <a href="https://id.react.dev/learn"><div class="p-4 md:p-7  rounded-lg dark:bg-slate-800 w-40 h-48 hover:cursor-pointer transition-transform duration-500 hover:-translate-y-2 hover:shadow-[0_1px_20px_-0px_rgba(0,0,0,0.3)] hover:shadow-blue-300">
+      <img class="py-3 lg:py-5 w-16 h-auto md:w-20 lg:w-24 mx-auto  " src="img/kisspng-react-javascript-angularjs-ionic-atom-5b154be6947457.3471941815281223426081.png" alt="">
+    </div></a>
+    <a href="https://tailwindcss.com/"><div class="p-4 md:p-7  rounded-lg dark:bg-slate-800 w-40 h-48 hover:cursor-pointer transition-transform duration-500 hover:-translate-y-2 hover:shadow-[0_1px_20px_-0px_rgba(0,0,0,0.3)] hover:shadow-blue-300">
+      <img class="py-5 mt-4 lg:py-5 w-16 h-auto md:w-20 lg:w-24 mx-auto " src="img/tailwind_logo-removebg-preview.png" alt="">
+    </div></a>
+    <a href="https://vuejs.org/"><div class="p-4 md:p-7  rounded-lg dark:bg-slate-800 w-40 h-48 hover:cursor-pointer transition-transform duration-500 hover:-translate-y-2 hover:shadow-[0_1px_20px_-0px_rgba(0,0,0,0.3)] hover:shadow-blue-300">
+      <img class="py-3 lg:py-5 w-16 h-auto md:w-20 lg:w-24 mx-auto " src="img/pngwing.com (1).png" alt="">
+    </div></a>
+   
+    <a href="https://getbootstrap.com/"><div class="p-4 md:p-7  rounded-lg dark:bg-slate-800 w-40 h-48 hover:cursor-pointer transition-transform duration-500 hover:-translate-y-2 hover:shadow-[0_1px_20px_-0px_rgba(0,0,0,0.3)] hover:shadow-blue-300">
+      <img class="py-3 lg:py-5 w-16 h-auto md:w-20 lg:w-24 mx-auto " src="img/Bootstrap_logo.svg.png" alt="">
+    </div></a>
+  </div>
+</div>
+       </section>
+        <!-- Card Blog -->
+    <!-- blog berita -->
+      <section>
+        <div class="flex justify-center mt-[250px]  ">
+          <div class="w-96 h-36 flex-col  items-center gap-2.5 inline-flex">
+            <h1 class="text-center text-[#164863] text-5xl font-semibold leading-10 " style="font-family: 'Poppins', sans-serif;">Breaking News</h1>
+            <br>
+          <div class="w-96 justify-center items-center  ">
+            <span class="inline-flex text-[#164863] text-2xl w-[800px] font-medium -ml-[130px] " style="font-family: 'Poppins', sans-serif;" >Ikuti terus informasi dan berita-berita terbaru tentang Web </span>
+          </div>
+        </div>
+      </div>
+      <div class="w-full">
+       <!-- Card Blog -->
+<div id="blog" class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+
+  <!-- Grid -->
+  <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-24">    
+    <!-- Card -->
+    <div class=" rounded-xl overflow-hidden dark:focus:outline-none dark:focus:ring-1">
+      <div class="relative pt-[50%] sm:pt-[70%] rounded-xl overflow-hidden shadow-xl shadow-blue-100">
+        <img class="w-full h-full absolute top-0 start-0 object-cover hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl" src="img/monyet terlepas.jpg" >
+      </div>
+
+      <div class="mt-7">
+        <h3 class="text-sm font-medium text-[#164863] hover:text-blue-400 hover:cursor-pointer" style="font-family: 'Poppins', sans-serif;">
+          12 November | by admin riko
+        </h3>
+        <div>
+          <p class="mt-3 text-[#164863] font-semibold text-xl hover:text-blue-400 hover:cursor-pointer" style="font-family: 'Poppins', sans-serif;">
+            Monyet Terlepas di rumah waduk
+          </p>
+          <div class="border-b-4 border-blue-300 mt-4"></div>
+        </div>
+        <a href="berita2.html" class="mt-5 inline-flex items-center gap-x-1 text-[#164863] decoration-2 group-hover:underline font-medium hover:text-red-300">
+          lihat selengkapnya
+          <svg class="flex-shrink-0 w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+        </a>
+      </div>
+    </div>
+
+    
+    <!-- End Card -->
+    <div class=" rounded-xl overflow-hidden dark:focus:outline-none dark:focus:ring-1">
+      <div class="relative pt-[50%] sm:pt-[70%] rounded-xl overflow-hidden shadow-xl shadow-blue-100">
+        <img class="w-full h-full absolute top-0 start-0 object-cover hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl" src="img/haah lah.jpg" >
+      </div>
+
+      <div class="mt-7">
+        <h3 class="text-sm font-medium text-[#164863] hover:text-blue-400 hover:cursor-pointer" style="font-family: 'Poppins', sans-serif;">
+          09 November | by admin hibban
+        </h3>
+        <div>
+          <p class="mt-3 text-[#164863] font-semibold text-xl hover:text-blue-400 hover:cursor-pointer" style="font-family: 'Poppins', sans-serif;">
+            hantu kampung  durian runtuh
+          </p>
+          <div class="border-b-4 border-blue-300 mt-4"></div>
+        </div>
+        <a href="berita1.html" class="mt-5 inline-flex items-center gap-x-1 text-[#164863] decoration-2 group-hover:underline font-medium hover:text-red-300">
+          lihat selengkapnya
+          <svg class="flex-shrink-0 w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+        </a>
+      </div>
+    </div>
+
+    
+    <!-- End Card -->
+    <div class=" rounded-xl overflow-hidden dark:focus:outline-none dark:focus:ring-1">
+      <div class="relative pt-[50%] sm:pt-[70%] rounded-xl overflow-hidden shadow-xl shadow-blue-100">
+        <img class="w-full h-full absolute top-0 start-0 object-cover hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl" src="img/WhatsApp Image 2023-11-12 at 12.17.16_fd5a9dc4.jpg" >
+      </div>
+
+      <div class="mt-7">
+        <h3 class="text-sm font-medium text-[#164863] hover:text-blue-400 hover:cursor-pointer" style="font-family: 'Poppins', sans-serif;">
+          04 November | by admin akram
+        </h3>
+        <div>
+          <p class="mt-3 text-[#164863] font-semibold text-xl hover:text-blue-400 hover:cursor-pointer" style="font-family: 'Poppins', sans-serif;">
+            yoga bersama anjing yang lagi viral
+          </p>
+          <div class="border-b-4 border-blue-300 mt-4"></div>
+        </div>
+        <a href="berita3.html" class="mt-5 inline-flex items-center gap-x-1 text-[#164863] decoration-2 group-hover:underline font-medium hover:text-red-300">
+          lihat selengkapnya
+          <svg class="flex-shrink-0 w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+        </a>
+      </div>
+    </div>
+
+    
+    <!-- End Card -->
+    <div class=" rounded-xl overflow-hidden dark:focus:outline-none dark:focus:ring-1">
+      <div class="relative pt-[50%] sm:pt-[70%] rounded-xl overflow-hidden shadow-xl shadow-blue-100">
+        <img class="w-full h-full absolute top-0 start-0 object-cover hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl" src="img/berita 4 orang.jpeg" >
+      </div>
+
+      <div class="mt-7">
+        <h3 class="text-sm font-medium text-[#164863] hover:text-blue-400 hover:cursor-pointer">
+          07 November | by admin firaz
+        </h3>
+        <div>
+          <p class="mt-3 text-[#164863] font-semibold text-xl hover:text-blue-400 hover:cursor-pointer" style="font-family: 'Poppins', sans-serif;">
+            seorang remaja yang  mengaku 4 orang😮
+          </p>
+          <div class="border-b-4 border-blue-300 mt-4"></div>
+        </div>
+        <a href="berita4.html" class="mt-5 inline-flex items-center gap-x-1 text-[#164863] decoration-2 group-hover:underline font-medium hover:text-red-300">
+          lihat selengkapnya
+          <svg class="flex-shrink-0 w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+        </a>
+      </div>
+    </div>
+    <!-- End Card -->
+        </div>
+      </div>
+      </section>
+      <!-- footers -->
+      <div class="bg-[#365567] w-full h-full mt-9">
+        <footer class="w-full max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 mx-auto">
+          <!-- Grid -->
+          <div class="text-center">
+            <div>
+              <span class="flex-none text-xl font-bold  text-yellow-50 dark:focus:ring-1 dark:focus:ring-gray-600 " style="font-family: 'Poppins', sans-serif;" >Portofolio </span>
+            </div>
+            <!-- End Col -->
+        
+            <div class="mt-3">
+              <p class="text-white" style="font-family: 'Poppins', sans-serif;">berisikan informasi data  <a class="font-semibold text-blue-600 hover:text-blue-700 " href="#">Muhammad Fiqri</a> tailwind css </p>
+              <p class="text-white opacity-40">© by Muhammad Fiqri Agustriawan </p>
+            </div>
+        
+            <!-- Social Brands -->
+            <div class="mt-3 space-x-2">
+              <a class="inline-flex justify-center items-center w-10 h-10  hover:bg-gray-100 rounded-full  hover:opacity-60" href="#">
+                <img src="img/pngwing.com (2).png" class="h-7 w-7" alt="">
+              </a>
+              <a class="inline-flex justify-center items-center w-10 h-10  hover:bg-gray-100 rounded-full  hover:opacity-60" href="#">
+                <img src="img/pngwing.com (5).png" class="h-7 w-7" alt="">
+              </a>
+              <a class="inline-flex justify-center items-center w-10 h-10 hover:bg-gray-100 rounded-full  hover:opacity-60" href="#">
+                <img src="img/pngwing.com (4).png" class="h-7 w-7" alt="">
+              </a>
+              <a class="inline-flex justify-center items-center w-10 h-10 hover:bg-gray-100 rounded-full  hover:opacity-60" href="#">
+                <img src="img/pngwing.com (3).png" class="h-7 w-7" alt="">
+              </a>
+              
+            </div>
+          </div>
+          <!-- End Grid -->
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
